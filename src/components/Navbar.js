@@ -2,7 +2,7 @@ import React from "react";
 import "./Navbar.css";
 import imageLogo from "../images/instagram-logo.png";
 
-const Navbar = () =>{
+const Navbar = ({displayHome, displayExplore, displayProfile}) =>{
     return(
 
         <div className="navbar">
@@ -15,8 +15,8 @@ const Navbar = () =>{
             </div>
 
             <div className="inline-navbar">
-                <p><i className="fa fa-home"></i></p>
-                <p><i className="fa fa-compass"></i></p>
+                <p onClick={displayHome}><i className="fa fa-home"></i></p>
+                <p onClick={displayExplore}><i className="fa fa-compass"></i></p>
             </div>
 
         </div>
