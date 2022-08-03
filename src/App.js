@@ -4,7 +4,7 @@ import Display from "./components/Display";
 
 const App = () =>{
 
-    const [home, setHome] = React.useState(false);
+    const [home, setHome] = React.useState(true);
     const [explore, setExplore] = React.useState(false);
     const [profile, setProfile] = React.useState(false);
 
