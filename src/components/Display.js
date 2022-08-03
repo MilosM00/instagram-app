@@ -1,5 +1,6 @@
 import React from "react";
 import "./Display.css";
+import users from "../data/users";
 
 const Display = ({home, explore, profile}) =>{
     return(
