@@ -1,6 +1,7 @@
 import React from "react";
 import "./Navbar.css";
 import imageLogo from "../images/instagram-logo.png";
+import users from "../data/users";
 
 const Navbar = ({displayHome, displayExplore, displayProfile}) =>{
     return(
@@ -17,6 +18,7 @@ const Navbar = ({displayHome, displayExplore, displayProfile}) =>{
             <div className="inline-navbar">
                 <p onClick={displayHome}><i className="fa fa-home"></i></p>
                 <p onClick={displayExplore}><i className="fa fa-compass"></i></p>
+                <img src={users[0].profileImage} alt="profile" className="image-profile" onClick={displayProfile} />
             </div>
 
         </div>
