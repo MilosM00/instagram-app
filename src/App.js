@@ -8,6 +8,15 @@ const App = () =>{
     const [explore, setExplore] = React.useState(false);
     const [profile, setProfile] = React.useState(false);
 
+    const [login, setLogin] = React.useState(true);
+
+    const displayHomeLogo = () =>{
+        setHome(true);
+        setExplore(false);
+        setProfile(false);
+        document.body.scrollIntoView();
+    };
+
     const displayHome = () =>{
         setHome(true);
         setExplore(false);
@@ -34,12 +43,14 @@ const App = () =>{
                 displayHome={displayHome}
                 displayExplore={displayExplore}
                 displayProfile={displayProfile}
+                displayHomeLogo={displayHomeLogo}
             />
 
             <Display 
                 home={home}
                 explore={explore}
                 profile={profile}
+                login={login}
             />
 
         </div>
