@@ -2,7 +2,7 @@ import React from "react";
 import "./Display.css";
 import users from "../data/users";
 
-const Display = ({home, explore, profile}) =>{
+const Display = ({home, explore, profile, login}) =>{
     return(
 
         <>
@@ -28,6 +28,23 @@ const Display = ({home, explore, profile}) =>{
 
                     PROFILE
 
+                </div>
+            }
+
+            {login === true &&
+                <div className="login">
+
+
+                    <div className="inline-login">
+
+                        <p className="title-login">Login to Instagram!</p>
+
+                        <input type="text" placeholder="username" className="input-username" />
+                        <input type="password" placeholder="password" className="input-password" />
+
+                        <button className="button-login">Login</button>
+
+                    </div>   
                 </div>
             }
 
