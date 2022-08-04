@@ -3,12 +3,12 @@ import "./Navbar.css";
 import imageLogo from "../images/instagram-logo.png";
 import users from "../data/users";
 
-const Navbar = ({displayHome, displayExplore, displayProfile}) =>{
+const Navbar = ({displayHomeLogo, displayHome, displayExplore, displayProfile}) =>{
     return(
 
         <div className="navbar">
             
-            <img src={imageLogo} alt="instagram" className="image-instagram-logo" />
+            <img src={imageLogo} onClick={displayHomeLogo} alt="instagram" className="image-instagram-logo" />
 
             <div className="input-search">
                 <i className="fa fa-search"></i>
