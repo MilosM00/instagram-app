@@ -1,9 +1,13 @@
 .navbar{
-    align-items: center;
+    position: sticky;
+    top: 0;
     padding: 10px 0;
     display: flex;
+    align-items: center;
     justify-content: space-evenly;
-    box-shadow: 0 1px 7px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.1);
+    background-color: rgb(255, 255, 255);
+    z-index: 20;
 }
 
 .image-instagram-logo{
@@ -58,4 +62,60 @@
     border-radius: 50%;
     border: 1px solid rgb(0,0,0);
     cursor: pointer;
+}
+
+.hamburger-list{
+    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.1);
+    display: none;
+    place-items: center;
+    background-color: rgb(255, 255, 255);
+    width: 50px;
+    height: 200px;
+    position: absolute;
+    right: 0;
+    top: 70px;
+    z-index: 10;
+}
+
+.hamburger-list ul{
+    display: grid;
+    place-items: center;
+    gap: 15px;
+}
+
+.hamburger-list ul li{
+    list-style: none;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.hamburger{
+    display: none;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+
+@media (max-width: 649px) {
+    .navbar{
+        justify-content: space-between;
+        padding-left: 5px;
+        padding-right: 10px;
+    }
+
+    .inline-navbar{
+        display: none;
+    }
+
+    .input-search{
+        display: none;
+    }
+
+    .hamburger-list{
+        display: grid;
+    }
+
+    .hamburger{
+        display: block;
+    }
 }
