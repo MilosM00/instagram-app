@@ -1,6 +1,21 @@
 import profileImageOne from "../images/user1.jpg";
 import profileImageTwo from "../images/user2.jpg";
 import profileImageThree from "../images/user3.jpg";
+import profileImageFour from "../images/user4.jpg";
+import profileImageFive from "../images/user5.jpg";
+import profileImageSix from "../images/user6.jpg";
+import profileImageSeven from "../images/user7.jpg";
+import profileImageEight from "../images/user8.jpg";
+import profileImageNine from "../images/user9.jpg";
+import profileImageTen from "../images/user10.jpg";
+import profileImageEleven from "../images/user11.jpg";
+import profileImageTwelve from "../images/user12.jpg";
+import profileImageThirteen from "../images/user13.jpg";
+import profileImageFourteen from "../images/user14.jpg";
+import profileImageFifteen from "../images/user15.jpg";
+import profileImageSixteen from "../images/user16.jpg";
+import profileImageSeventeen from "../images/user17.jpg";
+import profileImageEighteen from "../images/user18.jpg";
 
 export default [
     {
@@ -37,5 +52,185 @@ export default [
         posts: 22,
         followers: 1592,
         following: 519
+    },
+
+    {
+        username: "james_blue",
+        password: "james123",
+        firstName: "James",
+        lastName: "Blue",
+        profileImage: profileImageFour,
+        description: "Hi, my name is James, let's connect!",
+        posts: 5,
+        followers: 1092,
+        following: 819
+    },
+
+    {
+        username: "ana_white",
+        password: "ana123",
+        firstName: "Ana",
+        lastName: "White",
+        profileImage: profileImageFive,
+        description: "Hello, my name is Ana, follow me!",
+        posts: 15,
+        followers: 1292,
+        following: 419
+    },
+
+    {
+        username: "dennise_johnson",
+        password: "dennise123",
+        firstName: "Dennise",
+        lastName: "Johnson",
+        profileImage: profileImageSix,
+        description: "Hey! My name is Dennise, love to be here!",
+        posts: 25,
+        followers: 2092,
+        following: 754
+    },
+
+    {
+        username: "michael_smith",
+        password: "michael123",
+        firstName: "Michael",
+        lastName: "Smith",
+        profileImage: profileImageSeven,
+        description: "Hello, my name is Michael, it is pleasure to be here!",
+        posts: 5,
+        followers: 1092,
+        following: 819
+    },
+    
+    {
+        username: "will_jones",
+        password: "will123",
+        firstName: "Will",
+        lastName: "Jones",
+        profileImage: profileImageEight,
+        description: "Hello, my name is Will, let's connect!",
+        posts: 3,
+        followers: 492,
+        following: 419
+    },
+
+    {
+        username: "nick_davis",
+        password: "nick123",
+        firstName: "Nick",
+        lastName: "Davis",
+        profileImage: profileImageNine,
+        description: "Hi, my name is Nick, it is good to be here!",
+        posts: 6,
+        followers: 892,
+        following: 819
+    },
+
+    {
+        username: "rechelle_miller",
+        password: "rechelle123",
+        firstName: "Rechelle",
+        lastName: "Miller",
+        profileImage: profileImageTen,
+        description: "Hi, my name is Rechelle, follow me!",
+        posts: 17,
+        followers: 1592,
+        following: 769
+    },
+
+    {
+        username: "pam_clark",
+        password: "pam123",
+        firstName: "Pam",
+        lastName: "Clark",
+        profileImage: profileImageEleven,
+        description: "Hello, my name is Pam, let's connect!",
+        posts: 10,
+        followers: 1792,
+        following: 989
+    },
+
+    {
+        username: "sara_lee",
+        password: "sara123",
+        firstName: "Sara",
+        lastName: "Lee",
+        profileImage: profileImageTwelve,
+        description: "Hey! My name is Sara, follow me!",
+        posts: 30,
+        followers: 3592,
+        following: 1152
+    },
+
+    {
+        username: "roy_martin",
+        password: "roy123",
+        firstName: "Roy",
+        lastName: "Martin",
+        profileImage: profileImageThirteen,
+        description: "Hello! My name is Roy, it feels nice to be here!",
+        posts: 5,
+        followers: 921,
+        following: 679
+    },
+
+    {
+        username: "sophia_taylor",
+        password: "sophia123",
+        firstName: "Sophia",
+        lastName: "Taylor",
+        profileImage: profileImageFourteen,
+        description: "Hey! My name is Sophia, follow me!",
+        posts: 30,
+        followers: 4392,
+        following: 1249
+    },
+
+    {
+        username: "emma_lewis",
+        password: "emma123",
+        firstName: "Emma",
+        lastName: "Lewis",
+        profileImage: profileImageFifteen,
+        description: "Hello, my name is Emma, let's connect!",
+        posts: 16,
+        followers: 2522,
+        following: 1253
+    },
+    
+    {
+        username: "jim_adams",
+        password: "jim123",
+        firstName: "Jim",
+        lastName: "Adams",
+        profileImage: profileImageSixteen,
+        description: "Hey! My name is Jim, let's connect!",
+        posts: 7,
+        followers: 992,
+        following: 819
+    },
+
+    {
+        username: "mia_morris",
+        password: "mia123",
+        firstName: "Mia",
+        lastName: "Morris",
+        profileImage: profileImageSeventeen,
+        description: "Hello! My name is Mia, love to be here!",
+        posts: 21,
+        followers: 3192,
+        following: 1821
+    },
+
+    {
+        username: "ellis_hall",
+        password: "ellis123",
+        firstName: "Ellis",
+        lastName: "Hall",
+        profileImage: profileImageEighteen,
+        description: "Hi, my name is Ellis, let's connect!",
+        posts: 5,
+        followers: 1292,
+        following: 729
     }
 ];
