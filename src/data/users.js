@@ -56,7 +56,6 @@ export default [
 
     {
         username: "james_blue",
-        password: "james123",
         firstName: "James",
         lastName: "Blue",
         profileImage: profileImageFour,
@@ -68,7 +67,6 @@ export default [
 
     {
         username: "ana_white",
-        password: "ana123",
         firstName: "Ana",
         lastName: "White",
         profileImage: profileImageFive,
@@ -80,7 +78,6 @@ export default [
 
     {
         username: "dennise_johnson",
-        password: "dennise123",
         firstName: "Dennise",
         lastName: "Johnson",
         profileImage: profileImageSix,
@@ -92,7 +89,6 @@ export default [
 
     {
         username: "michael_smith",
-        password: "michael123",
         firstName: "Michael",
         lastName: "Smith",
         profileImage: profileImageSeven,
@@ -104,7 +100,6 @@ export default [
     
     {
         username: "will_jones",
-        password: "will123",
         firstName: "Will",
         lastName: "Jones",
         profileImage: profileImageEight,
@@ -116,7 +111,6 @@ export default [
 
     {
         username: "nick_davis",
-        password: "nick123",
         firstName: "Nick",
         lastName: "Davis",
         profileImage: profileImageNine,
@@ -128,7 +122,6 @@ export default [
 
     {
         username: "rechelle_miller",
-        password: "rechelle123",
         firstName: "Rechelle",
         lastName: "Miller",
         profileImage: profileImageTen,
@@ -140,7 +133,6 @@ export default [
 
     {
         username: "pam_clark",
-        password: "pam123",
         firstName: "Pam",
         lastName: "Clark",
         profileImage: profileImageEleven,
@@ -152,7 +144,6 @@ export default [
 
     {
         username: "sara_lee",
-        password: "sara123",
         firstName: "Sara",
         lastName: "Lee",
         profileImage: profileImageTwelve,
@@ -164,7 +155,6 @@ export default [
 
     {
         username: "roy_martin",
-        password: "roy123",
         firstName: "Roy",
         lastName: "Martin",
         profileImage: profileImageThirteen,
@@ -176,7 +166,6 @@ export default [
 
     {
         username: "sophia_taylor",
-        password: "sophia123",
         firstName: "Sophia",
         lastName: "Taylor",
         profileImage: profileImageFourteen,
@@ -188,7 +177,6 @@ export default [
 
     {
         username: "emma_lewis",
-        password: "emma123",
         firstName: "Emma",
         lastName: "Lewis",
         profileImage: profileImageFifteen,
@@ -200,7 +188,6 @@ export default [
     
     {
         username: "jim_adams",
-        password: "jim123",
         firstName: "Jim",
         lastName: "Adams",
         profileImage: profileImageSixteen,
@@ -212,7 +199,6 @@ export default [
 
     {
         username: "mia_morris",
-        password: "mia123",
         firstName: "Mia",
         lastName: "Morris",
         profileImage: profileImageSeventeen,
@@ -224,7 +210,6 @@ export default [
 
     {
         username: "ellis_hall",
-        password: "ellis123",
         firstName: "Ellis",
         lastName: "Hall",
         profileImage: profileImageEighteen,
