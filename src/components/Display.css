@@ -85,3 +85,47 @@
 .description{
     padding-top: 20px;
 }
+
+/* HOME */
+
+.home{
+    font-family: 'Rubik', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.suggestions{
+    display: grid;
+    place-items: center;
+}
+
+.suggestions div{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 300px;
+    padding: 10px 0;
+}
+
+.title-suggestions{
+    padding: 20px 0;
+    font-size: 18px;
+}
+
+.suggestions div img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.button-follow,
+.button-switch{
+    font-family: 'Rubik', sans-serif;
+    font-size: 15px;
+    border: none;
+    background-color: transparent;
+    color: rgb(0, 113, 179);
+    cursor: pointer;
+}
