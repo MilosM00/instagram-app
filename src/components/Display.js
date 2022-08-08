@@ -1,5 +1,6 @@
 import React from "react";
 import "./Display.css";
+import users from "../data/users";
 
 const Display = ({home, explore, profile, login, usernameEvent, passwordEvent, loginEvent, currentUser, password, username}) =>{
     return(
@@ -9,7 +10,57 @@ const Display = ({home, explore, profile, login, usernameEvent, passwordEvent, l
             {home === true &&
                 <div className="home">  
 
-                    HOME
+                    <div className="story-posts-container">
+                        <div className="story">
+
+                        </div>
+
+                        {/* posts */}
+                    </div>
+
+                    <div className="suggestions">
+                        <div>
+                            <img src={currentUser?.profileImage} alt="profile image" />
+                            <p>
+                                {currentUser?.username} <br />
+                                {currentUser?.firstName} {currentUser?.lastName}
+                            </p>
+                            <button className="button-switch">Switch</button>
+                        </div>
+
+                        <p className="title-suggestions">Suggestions For You</p>
+
+                        <div>
+                            <img src={users[10].profileImage} alt="profile image" />
+                            <p>{users[10].username}</p>
+                            <button className="button-follow">Follow</button>
+                        </div>
+
+                        <div>
+                            <img src={users[7].profileImage} alt="profile image" />
+                            <p>{users[7].username}</p>
+                            <button className="button-follow">Follow</button>
+                        </div>
+
+                        <div>
+                            <img src={users[8].profileImage} alt="profile image" />
+                            <p>{users[8].username}</p>
+                            <button className="button-follow">Follow</button>
+                        </div>
+
+                        <div>
+                            <img src={users[15].profileImage} alt="profile image" />
+                            <p>{users[15].username}</p>
+                            <button className="button-follow">Follow</button>
+                        </div>
+
+                        <div>
+                            <img src={users[11].profileImage} alt="profile image" />
+                            <p>{users[11].username}</p>
+                            <button className="button-follow">Follow</button>
+                        </div>
+                            
+                    </div>
 
                 </div>
             }
