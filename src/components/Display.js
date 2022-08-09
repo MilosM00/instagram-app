@@ -12,10 +12,32 @@ const Display = ({home, explore, profile, login, usernameEvent, passwordEvent, l
 
                     <div className="story-posts-container">
                         <div className="story">
-
+                            {
+                                users.map((value, id) =>{
+                                    return(
+                                        <div key={id}>
+                                            <div 
+                                                className="div-story"
+                                                style={value.story === true ? 
+                                                    {background: "linear-gradient(to right, #DE3163, #FF3800)"} : 
+                                                    {background: "linear-gradient(to right, rgb(95,95,95), rgb(190,190,190))"}
+                                                }
+                                            >
+                                                <img 
+                                                    src={value.profileImage} 
+                                                    alt="profile image" 
+                                                    className="profile-image-story"
+                                                />
+                                            </div>
+                                            <p className="username-story">{value.username}</p>
+                                        </div>
+                                    )
+                                })
+                            }
                         </div>
 
                         {/* posts */}
+
                     </div>
 
                     <div className="suggestions">
