@@ -95,6 +95,7 @@ const App = () =>{
                 password={password}
                 username={username}
                 currentUser={currentUser}
+                logoutEvent={logoutEvent}
             />
 
         </div>
