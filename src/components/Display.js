@@ -2,7 +2,38 @@ import React from "react";
 import "./Display.css";
 import users from "../data/users";
 
-const Display = ({home, explore, profile, login, usernameEvent, passwordEvent, loginEvent, currentUser, password, username}) =>{
+const Display = ({home, explore, profile, login, usernameEvent, passwordEvent, loginEvent, currentUser, password, username, logoutEvent}) =>{
+
+    const [follow, setFollow] = React.useState(true);
+    const [follow2, setFollow2] = React.useState(true);
+    const [follow3, setFollow3] = React.useState(true);
+    const [follow4, setFollow4] = React.useState(true);
+    const [follow5, setFollow5] = React.useState(true);
+
+    const followEvent = () =>{
+        setFollow(!follow);
+    };
+    const followEvent2 = () =>{
+        setFollow2(!follow2);
+    };
+    const followEvent3 = () =>{
+        setFollow3(!follow3);
+    };
+    const followEvent4 = () =>{
+        setFollow4(!follow4);
+    };
+    const followEvent5 = () =>{
+        setFollow5(!follow5);
+    };
+
+    const followAllEvent = () =>{
+        setFollow(!follow);
+        setFollow2(!follow);
+        setFollow3(!follow);
+        setFollow4(!follow);
+        setFollow5(!follow);
+    }
+
     return(
 
         <>
@@ -47,39 +78,41 @@ const Display = ({home, explore, profile, login, usernameEvent, passwordEvent, l
                                 {currentUser?.username} <br />
                                 {currentUser?.firstName} {currentUser?.lastName}
                             </p>
-                            <button className="button-switch">Switch</button>
+                            <button className="button-switch" onClick={logoutEvent} >Switch</button>
                         </div>
 
                         <p className="title-suggestions">Suggestions For You</p>
 
+                        <button className="button-follow" onClick={followAllEvent}>Follow All</button>
+
                         <div>
                             <img src={users[10].profileImage} alt="profile image" />
                             <p>{users[10].username}</p>
-                            <button className="button-follow">Follow</button>
+                            <button className="button-follow" onClick={followEvent}>{follow === true ? "Follow" : "Unfollow"}</button>
                         </div>
 
                         <div>
                             <img src={users[7].profileImage} alt="profile image" />
                             <p>{users[7].username}</p>
-                            <button className="button-follow">Follow</button>
+                            <button className="button-follow" onClick={followEvent2}>{follow2 === true ? "Follow" : "Unfollow"}</button>
                         </div>
 
                         <div>
                             <img src={users[8].profileImage} alt="profile image" />
                             <p>{users[8].username}</p>
-                            <button className="button-follow">Follow</button>
+                            <button className="button-follow" onClick={followEvent3}>{follow3 === true ? "Follow" : "Unfollow"}</button>
                         </div>
 
                         <div>
                             <img src={users[15].profileImage} alt="profile image" />
                             <p>{users[15].username}</p>
-                            <button className="button-follow">Follow</button>
+                            <button className="button-follow" onClick={followEvent4}>{follow4 === true ? "Follow" : "Unfollow"}</button>
                         </div>
 
                         <div>
                             <img src={users[11].profileImage} alt="profile image" />
                             <p>{users[11].username}</p>
-                            <button className="button-follow">Follow</button>
+                            <button className="button-follow" onClick={followEvent5}>{follow5 === true ? "Follow" : "Unfollow"}</button>
                         </div>
                             
                     </div>
