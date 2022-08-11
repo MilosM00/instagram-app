@@ -169,3 +169,10 @@
     padding: 2px;
     cursor: pointer;
 }
+
+
+@media (max-width: 849px) {
+    .suggestions{
+        display: none;
+    }
+}
