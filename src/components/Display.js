@@ -56,7 +56,7 @@ const Display = ({home, explore, profile, login, usernameEvent, passwordEvent, l
                                             >
                                                 <img 
                                                     src={value.profileImage} 
-                                                    alt="profile image" 
+                                                    alt="profile" 
                                                     className="profile-image-story"
                                                 />
                                             </div>
@@ -73,7 +73,7 @@ const Display = ({home, explore, profile, login, usernameEvent, passwordEvent, l
 
                     <div className="suggestions">
                         <div>
-                            <img src={currentUser?.profileImage} alt="profile image" />
+                            <img src={currentUser?.profileImage} alt="profile" />
                             <p>
                                 {currentUser?.username} <br />
                                 {currentUser?.firstName} {currentUser?.lastName}
@@ -86,31 +86,31 @@ const Display = ({home, explore, profile, login, usernameEvent, passwordEvent, l
                         <button className="button-follow" onClick={followAllEvent}>Follow All</button>
 
                         <div>
-                            <img src={users[10].profileImage} alt="profile image" />
+                            <img src={users[10].profileImage} alt="profile" />
                             <p>{users[10].username}</p>
                             <button className="button-follow" onClick={followEvent}>{follow === true ? "Follow" : "Unfollow"}</button>
                         </div>
 
                         <div>
-                            <img src={users[7].profileImage} alt="profile image" />
+                            <img src={users[7].profileImage} alt="profile" />
                             <p>{users[7].username}</p>
                             <button className="button-follow" onClick={followEvent2}>{follow2 === true ? "Follow" : "Unfollow"}</button>
                         </div>
 
                         <div>
-                            <img src={users[8].profileImage} alt="profile image" />
+                            <img src={users[8].profileImage} alt="profile" />
                             <p>{users[8].username}</p>
                             <button className="button-follow" onClick={followEvent3}>{follow3 === true ? "Follow" : "Unfollow"}</button>
                         </div>
 
                         <div>
-                            <img src={users[15].profileImage} alt="profile image" />
+                            <img src={users[15].profileImage} alt="profile" />
                             <p>{users[15].username}</p>
                             <button className="button-follow" onClick={followEvent4}>{follow4 === true ? "Follow" : "Unfollow"}</button>
                         </div>
 
                         <div>
-                            <img src={users[11].profileImage} alt="profile image" />
+                            <img src={users[11].profileImage} alt="profile" />
                             <p>{users[11].username}</p>
                             <button className="button-follow" onClick={followEvent5}>{follow5 === true ? "Follow" : "Unfollow"}</button>
                         </div>
