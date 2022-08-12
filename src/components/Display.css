@@ -145,6 +145,7 @@
     padding: 0 10px;
     overflow-y: hidden;
     overflow-x: auto;
+    margin-bottom: 20px;
 }
 
 .profile-image-story{
@@ -168,6 +169,56 @@
     border-radius: 50%;
     padding: 2px;
     cursor: pointer;
+}
+
+.image-profile-posts{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.posts{
+    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.1);
+    display: grid;
+    place-items: center;
+    width: 500px;
+}
+
+.inline-posts{
+    padding: 10px 5px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+}
+
+.image-posts{
+    width: 100%;
+    height: 600px;
+}
+
+.likes{
+    padding: 10px 5px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.likes div{
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.likes-inline{
+    display: flex;
+    gap:10px;
+}
+
+.likes-display{
+    padding: 10px 5px;
+    width: 100%;
+    display: grid;
+    place-items: left;
 }
 
 
