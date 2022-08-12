@@ -1,6 +1,7 @@
 import React from "react";
 import "./Display.css";
 import users from "../data/users";
+import img from "../data/images";
 
 const Display = ({home, explore, profile, login, usernameEvent, passwordEvent, loginEvent, currentUser, password, username, logoutEvent}) =>{
 
@@ -67,7 +68,28 @@ const Display = ({home, explore, profile, login, usernameEvent, passwordEvent, l
                             }
                         </div>
 
-                        {/* posts */}
+                        <div className="posts">
+                            <div className="inline-posts">
+                                <img className="image-profile-posts" src={users[0].profileImage} alt="profile" />
+                                <p>{users[0].username}</p>
+                            </div>
+                            <img className="image-posts" src={img[0].image} alt="posts" />
+                            <div className="likes">
+                                <div className="likes-inline">
+                                    <p><i className="fa fa-heart"></i></p>
+                                    <p><i className="fa fa-comment"></i></p>
+                                    <p><i className="fa fa-share"></i></p>
+                                </div>
+
+                                <div>
+                                    <p><i className="fa fa-bookmark"></i></p>
+                                </div>
+                            </div>
+
+                            <div className="likes-display">
+                                <p><b>148 likes</b></p>
+                            </div>
+                        </div>
 
                     </div>
 
