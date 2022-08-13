@@ -10,6 +10,9 @@ const Display = ({home, explore, profile, login, usernameEvent, passwordEvent, l
     const [follow3, setFollow3] = React.useState(true);
     const [follow4, setFollow4] = React.useState(true);
     const [follow5, setFollow5] = React.useState(true);
+    const [like, setLike] = React.useState(false);
+    const [like2, setLike2] = React.useState(false);
+    const [like3, setLike3] = React.useState(false);
 
     const followEvent = () =>{
         setFollow(!follow);
@@ -34,6 +37,16 @@ const Display = ({home, explore, profile, login, usernameEvent, passwordEvent, l
         setFollow4(!follow);
         setFollow5(!follow);
     }
+
+    const likeEvent = () =>{
+        setLike(!like);
+    };
+    const likeEvent2 = () =>{
+        setLike2(!like2);
+    };
+    const likeEvent3 = () =>{
+        setLike3(!like3);
+    };
 
     return(
 
@@ -70,13 +83,13 @@ const Display = ({home, explore, profile, login, usernameEvent, passwordEvent, l
 
                         <div className="posts">
                             <div className="inline-posts">
-                                <img className="image-profile-posts" src={users[0].profileImage} alt="profile" />
-                                <p>{users[0].username}</p>
+                                <img className="image-profile-posts" src={users[13].profileImage} alt="profile" />
+                                <p>{users[13].username}</p>
                             </div>
                             <img className="image-posts" src={img[0].image} alt="posts" />
                             <div className="likes">
                                 <div className="likes-inline">
-                                    <p><i className="fa fa-heart"></i></p>
+                                    <p className={like === true && "red-heart"} onClick={likeEvent}><i className="fa fa-heart"></i></p>
                                     <p><i className="fa fa-comment"></i></p>
                                     <p><i className="fa fa-share"></i></p>
                                 </div>
@@ -87,7 +100,53 @@ const Display = ({home, explore, profile, login, usernameEvent, passwordEvent, l
                             </div>
 
                             <div className="likes-display">
-                                <p><b>148 likes</b></p>
+                                <p><b>{like === false ? 148 : 149} likes</b></p>
+                            </div>
+                        </div>
+
+                        <div className="posts">
+                            <div className="inline-posts">
+                                <img className="image-profile-posts" src={users[15].profileImage} alt="profile" />
+                                <p>{users[15].username}</p>
+                            </div>
+                            <img className="image-posts" src={img[2].image} alt="posts" />
+                            <div className="likes">
+                                <div className="likes-inline">
+                                    <p className={like2 === true && "red-heart"} onClick={likeEvent2}><i className="fa fa-heart"></i></p>
+                                    <p><i className="fa fa-comment"></i></p>
+                                    <p><i className="fa fa-share"></i></p>
+                                </div>
+
+                                <div>
+                                    <p><i className="fa fa-bookmark"></i></p>
+                                </div>
+                            </div>
+
+                            <div className="likes-display">
+                                <p><b>{like2 === false ? 321 : 322} likes</b></p>
+                            </div>
+                        </div>
+
+                        <div className="posts">
+                            <div className="inline-posts">
+                                <img className="image-profile-posts" src={users[9].profileImage} alt="profile" />
+                                <p>{users[9].username}</p>
+                            </div>
+                            <img className="image-posts" src={img[4].image} alt="posts" />
+                            <div className="likes">
+                                <div className="likes-inline">
+                                    <p className={like3 === true && "red-heart"} onClick={likeEvent3}><i className="fa fa-heart"></i></p>
+                                    <p><i className="fa fa-comment"></i></p>
+                                    <p><i className="fa fa-share"></i></p>
+                                </div>
+
+                                <div>
+                                    <p><i className="fa fa-bookmark"></i></p>
+                                </div>
+                            </div>
+
+                            <div className="likes-display">
+                                <p><b>{like3 === false ? 279 : 280} likes</b></p>
                             </div>
                         </div>
 
