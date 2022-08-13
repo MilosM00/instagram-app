@@ -5,7 +5,7 @@ import users from "./data/users";
 
 const App = () =>{
 
-    const [home, setHome] = React.useState(true);
+    const [home, setHome] = React.useState(false);
     const [explore, setExplore] = React.useState(false);
     const [profile, setProfile] = React.useState(false);
 
@@ -49,13 +49,14 @@ const App = () =>{
         if(currentUser?.password === password)
         {
             setLogin(false);
+            setHome(true);
         }
     };
 
     const logoutEvent = () =>{
         document.body.scrollIntoView();
-        setHome(true);
         setLogin(true);
+        setHome(false);
         setHamburger(false);
         setExplore(false);
         setProfile(false);
