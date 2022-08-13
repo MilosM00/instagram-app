@@ -91,7 +91,6 @@
 .home{
     font-family: 'Rubik', sans-serif;
     display: flex;
-    align-items: center;
     justify-content: center;
     padding: 20px 0;
 }
@@ -99,6 +98,7 @@
 .suggestions{
     display: grid;
     place-items: center;
+    height: 600px;
 }
 
 .suggestions div{
@@ -182,6 +182,7 @@
     display: grid;
     place-items: center;
     width: 500px;
+    margin-bottom: 20px;
 }
 
 .inline-posts{
@@ -219,6 +220,10 @@
     width: 100%;
     display: grid;
     place-items: left;
+}
+
+.red-heart{
+    color: rgb(209, 14, 40);
 }
 
 
