@@ -89,7 +89,7 @@ const Display = ({home, explore, profile, login, usernameEvent, passwordEvent, l
                             <img className="image-posts" src={img[0].image} alt="posts" />
                             <div className="likes">
                                 <div className="likes-inline">
-                                    <p className={like === true && "red-heart"} onClick={likeEvent}><i className="fa fa-heart"></i></p>
+                                    <p className={like === true ? "red-heart" : undefined} onClick={likeEvent}><i className="fa fa-heart"></i></p>
                                     <p><i className="fa fa-comment"></i></p>
                                     <p><i className="fa fa-share"></i></p>
                                 </div>
@@ -112,7 +112,7 @@ const Display = ({home, explore, profile, login, usernameEvent, passwordEvent, l
                             <img className="image-posts" src={img[2].image} alt="posts" />
                             <div className="likes">
                                 <div className="likes-inline">
-                                    <p className={like2 === true && "red-heart"} onClick={likeEvent2}><i className="fa fa-heart"></i></p>
+                                    <p className={like2 === true ? "red-heart" : undefined} onClick={likeEvent2}><i className="fa fa-heart"></i></p>
                                     <p><i className="fa fa-comment"></i></p>
                                     <p><i className="fa fa-share"></i></p>
                                 </div>
@@ -135,7 +135,7 @@ const Display = ({home, explore, profile, login, usernameEvent, passwordEvent, l
                             <img className="image-posts" src={img[4].image} alt="posts" />
                             <div className="likes">
                                 <div className="likes-inline">
-                                    <p className={like3 === true && "red-heart"} onClick={likeEvent3}><i className="fa fa-heart"></i></p>
+                                    <p className={like3 === true ? "red-heart" : undefined} onClick={likeEvent3}><i className="fa fa-heart"></i></p>
                                     <p><i className="fa fa-comment"></i></p>
                                     <p><i className="fa fa-share"></i></p>
                                 </div>
