@@ -98,7 +98,7 @@
 .suggestions{
     display: grid;
     place-items: center;
-    height: 600px;
+    height: 500px;
 }
 
 .suggestions div{
