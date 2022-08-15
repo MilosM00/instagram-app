@@ -232,3 +232,24 @@
         display: none;
     }
 }
+
+@media (max-width: 649px) {
+    .inline-profile{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 499px) {
+    .story{
+        width: 100%;
+    }
+
+    .posts{
+        width: 100%;
+    }
+
+    .image-posts{
+        height: 100%;
+    }
+}
