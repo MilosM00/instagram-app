@@ -226,6 +226,32 @@
     color: rgb(209, 14, 40);
 }
 
+/* EXPLORE */
+
+.explore{
+    padding: 50px 0;
+    display: grid;
+    place-items: center;
+}
+
+.image-overlay-explore{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(3, 300px);
+}
+
+.image-explore{
+    width: 300px;
+    height: 400px;
+    cursor: pointer;
+}
+
+
+@media (max-width: 899px) {
+    .image-overlay-explore{
+        grid-template-columns: repeat(2, 300px);
+    }
+}
 
 @media (max-width: 849px) {
     .suggestions{
@@ -237,6 +263,12 @@
     .inline-profile{
         flex-direction: column;
         align-items: center;
+    }
+}
+
+@media (max-width: 599px) {
+    .image-overlay-explore{
+        grid-template-columns: repeat(1, 300px);
     }
 }
 
