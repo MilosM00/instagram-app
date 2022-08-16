@@ -2,25 +2,6 @@ import React from "react";
 import "./Display.css";
 import users from "../data/users";
 import img from "../data/images";
-import profileImageOne from "../images/user1.jpg";
-import profileImageTwo from "../images/user2.jpg";
-import profileImageThree from "../images/user3.jpg";
-import profileImageFour from "../images/user4.jpg";
-import profileImageFive from "../images/user5.jpg";
-import profileImageSix from "../images/user6.jpg";
-import profileImageSeven from "../images/user7.jpg";
-import profileImageEight from "../images/user8.jpg";
-import profileImageNine from "../images/user9.jpg";
-import profileImageTen from "../images/user10.jpg";
-import profileImageEleven from "../images/user11.jpg";
-import profileImageTwelve from "../images/user12.jpg";
-import profileImageThirteen from "../images/user13.jpg";
-import profileImageFourteen from "../images/user14.jpg";
-import profileImageFifteen from "../images/user15.jpg";
-import profileImageSixteen from "../images/user16.jpg";
-import profileImageSeventeen from "../images/user17.jpg";
-import profileImageEighteen from "../images/user18.jpg";
-
 
 const Display = ({home, explore, profile, login, usernameEvent, passwordEvent, loginEvent, currentUser, password, username, logoutEvent}) =>{
 
@@ -222,9 +203,17 @@ const Display = ({home, explore, profile, login, usernameEvent, passwordEvent, l
 
             {explore === true &&
                 <div className="explore">
+                    <div className="image-overlay-explore">
 
-                    EXPLORE
+                    {
+                        img.map((value, id) => {
+                            return(
+                                <img className="image-explore" src={value.image} alt="explore" key={id} />
+                            )
+                        })
+                    }
 
+                    </div>
                 </div>
             }
 
