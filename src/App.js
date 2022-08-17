@@ -82,7 +82,7 @@ const App = () =>{
                 logoutEvent={logoutEvent}
                 hamburger={hamburger}
                 hamburgerEvent={hamburgerEvent}
-            />
+                />
 
             <Display 
                 home={home}
@@ -92,6 +92,7 @@ const App = () =>{
                 setLogin={setLogin}
                 usernameEvent={usernameEvent}
                 passwordEvent={passwordEvent}
+                displayProfile={displayProfile}
                 loginEvent={loginEvent}
                 password={password}
                 username={username}
