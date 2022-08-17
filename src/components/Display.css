@@ -135,42 +135,6 @@
     place-items: center;
 }
 
-.story{
-    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.1);
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    width: 500px;
-    height: 120px;
-    padding: 0 10px;
-    overflow-y: hidden;
-    overflow-x: auto;
-    margin-bottom: 20px;
-}
-
-.profile-image-story{
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    border: 3px solid rgb(255,255,255);
-}
-
-.username-story{
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    font-size: 15px;
-    width: 50px;
-}
-
-.div-story{
-    display: grid;
-    place-items: center;
-    border-radius: 50%;
-    padding: 2px;
-    cursor: pointer;
-}
-
 .image-profile-posts{
     width: 50px;
     height: 50px;
@@ -273,10 +237,6 @@
 }
 
 @media (max-width: 499px) {
-    .story{
-        width: 100%;
-    }
-
     .posts{
         width: 100%;
     }
