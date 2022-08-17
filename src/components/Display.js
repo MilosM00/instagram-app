@@ -1,9 +1,10 @@
 import React from "react";
 import "./Display.css";
+import Story from "../components/Story"
 import users from "../data/users";
 import img from "../data/images";
 
-const Display = ({home, explore, profile, login, usernameEvent, passwordEvent, loginEvent, currentUser, password, username, logoutEvent}) =>{
+const Display = ({home, explore, profile, login, usernameEvent, passwordEvent, loginEvent, currentUser, password, username, logoutEvent, displayProfile}) =>{
 
     const [follow, setFollow] = React.useState(true);
     const [follow2, setFollow2] = React.useState(true);
@@ -60,22 +61,12 @@ const Display = ({home, explore, profile, login, usernameEvent, passwordEvent, l
                             {
                                 users.map((value, id) =>{
                                     return(
-                                        <div key={id}>
-                                            <div 
-                                                className="div-story"
-                                                style={value.story === true ? 
-                                                    {background: "linear-gradient(to right, #DE3163, #FF3800)"} : 
-                                                    {background: "linear-gradient(to right, rgb(95,95,95), rgb(190,190,190))"}
-                                                }
-                                            >
-                                                <img 
-                                                    src={value.profileImage} 
-                                                    alt="profile" 
-                                                    className="profile-image-story"
-                                                />
-                                            </div>
-                                            <p className="username-story">{value.username}</p>
-                                        </div>
+                                        <Story
+                                            key={id}
+                                            image={value.profileImage}
+                                            username={value.username}
+                                            view={value.story}   
+                                        />
                                     )
                                 })
                             }
@@ -154,7 +145,7 @@ const Display = ({home, explore, profile, login, usernameEvent, passwordEvent, l
 
                     <div className="suggestions">
                         <div>
-                            <img src={currentUser?.profileImage} alt="profile" />
+                            <img style={{cursor: "pointer"}} src={currentUser?.profileImage} onClick={displayProfile} alt="profile" />
                             <p>
                                 {currentUser?.username} <br />
                                 {currentUser?.firstName} {currentUser?.lastName}
